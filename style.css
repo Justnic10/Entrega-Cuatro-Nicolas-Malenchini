@@ -389,7 +389,6 @@ a:hover{
         " descripcion__productos descripcion__productos descripcion__productos"
     ;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
 }
 
 .titulo__productos{
@@ -417,7 +416,7 @@ a:hover{
     width: 430px;
     height: 330px;
     border-radius: 8px;
-    margin:100px;
+    margin: 100px;
     text-align: center;
     border: 4px solid;
     border-color: orange;
@@ -596,3 +595,119 @@ button[type=reset]{
     font-size: 18px;
     justify-content: space-around;
 }
+
+
+/*Queries para la parte de servicios*/
+
+@media screen and (max-width: 800px){
+
+    .container__servicios{
+        grid-template-areas: 
+            " card card"
+            " card card"
+            " card card"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .datos__servicios__p{
+        font-size: 12px;  
+    }
+
+    li{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container__servicios{
+        grid-template-areas: 
+            " card"
+            " card"
+            " card"
+            " card"
+            " card"
+            " card"
+        ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .datos__servicios__p{
+        font-size: 9px;  
+    }
+
+        }
+
+
+
+
+    /*Queries para la parte de producto*/
+
+@media screen and (max-width: 800px){
+
+    .container__productos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titulo__productos{
+        font-size: 20px;
+    }
+
+    .imagen__revista{
+        width: 450px;
+        height: 350px;
+        margin-left: 150px;
+    }
+    
+    .descripcion__productos{
+        font-size: 13px;
+        padding: 20px;
+    }
+    
+    .datos__productos__p{ 
+        font-size: 12px;
+    }
+
+    .menu{
+        display: inline-block;
+        }
+
+    a:link{
+        font-size: 20px;  
+    }
+
+    .logo{
+        font-size: 25px;
+        padding: 10px;
+        margin-left: 300px;  
+    }
+    }
+
+    @media screen and (max-width: 600px){
+        
+        .logo{
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 250px;  
+        }
+
+        .menu{
+            display: inline-block;
+            }
+
+            a:link{
+                font-size: 13px;
+            }
+
+            .imagen__revista{
+                width: 300px;
+                height: 250px;
+            }
+
+            .datos__productos__p{ 
+                font-size: 9px;
+            }
+    }
